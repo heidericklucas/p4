@@ -143,32 +143,7 @@ Route::get('/edit/{id}', array(
                     }
 ));
 
-Route::post('/handleEdit', function() {
-    $data = Input::all();
-    //Validation constraints
-    $rules = array(
-        'name' => 'required'
-    );
-
-    // Validator instance.
-    $validator = Validator::make($data, $rules);
-
-    // Fails conditional
-    if ($validator->fails()) {
-    return Redirect::to('/incomplete')
-    ->with('flash_message', 'Edit failed. Tasks must be indexed by complete name.');
-    }
-
-    // SUCCESS!
-    $task = Task::findOrFail(Input::get('id'));
-    $task->fill(Input::all());
-    $task->complete     = Input::has('complete');
-    if (Input::has('complete')){
-    $task->completed_at_time = new Carbon('America/Chicago');
-    };
-    $task->save();
-    return Redirect::to('/all');
-});
+Route::post('/handleEdit', 'TaskEditController@postEdit');
 
 
 
