@@ -24,7 +24,7 @@
                     <td><strong>{{ $task['name'] }}</strong></td>
                     <td>{{ $task['created_at'] }}</td>
                     <td>{{ $task['complete'] ? 'Yes' : 'No'}}</td>
-                    <td><a href="edit/{{$task['id']}}" class="btn btn-default">Edit</a></td>
+                    <td>NOT YET</td>
 </tr>
                 @endif
                 @endforeach
@@ -48,7 +48,7 @@
 <tbody>
                 @foreach($tasks as $task)
                 @if ($task['complete'])
-                
+
 <tr>
                     <td>{{ $task['id'] }}</td>
                     <td><strong>{{ $task['name'] }}</strong></td>
