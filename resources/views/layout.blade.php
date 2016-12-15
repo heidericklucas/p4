@@ -37,7 +37,7 @@
 <!-- </div > -->
             <div class="jumbotron">
               <div class="container">
-<a href="/" ><h1>TASK BLASTER<h1></a>
+<a href="/" ><h1>HEID TASK<h1></a>
 <!-- <p><small><a href="/" >Incoming</a> / <href="/completed" >Outgoing</a> / <href="/all" >Full Horizon</a> </small></p> -->
               </div>
             </div>
