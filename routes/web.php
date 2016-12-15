@@ -104,35 +104,7 @@ Route::get('/create', array(
 
 
 
-Route::post('/handleCreate', function() {
-
-   $data = Input::all();
-
-    //Validation constraints.
-    $rules = array(
-    'name' => 'required'
-    );
-    //New validator
-    $validator = Validator::make($data, $rules);
-
-    //If fails
-    if ($validator->fails()) {
-    return Redirect::to('/create')
-    ->with('flash_message', 'Edit failed. Tasks must be indexed by complete name.')
-    ->withInput();
-    }
-
-
-    // SUCCESS
-    $task = new Task();
-    $task->name        = Input::get('name');
-    $task->complete     = Input::has('complete');
-    if (Input::has('complete')){
-    $task->completed_at_time = new Carbon('America/Chicago');
-    };
-    $task->save();
-    return Redirect::to('/incomplete');
-});
+Route::post('/handleCreate', 'HandleCreateController@handleCreate');
 
 
 Route::get('/edit/{id}', array(
