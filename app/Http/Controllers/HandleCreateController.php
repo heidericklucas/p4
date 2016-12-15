@@ -11,7 +11,7 @@ use Auth;
 use Redirect;
 use Carbon\Carbon;
 
-class UserLoginController extends Controller
+class HandleCreateController extends Controller
 {
 
   public function handleCreate()

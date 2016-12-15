@@ -10,7 +10,7 @@ use Validator;
 use Auth;
 use Redirect;
 
-class UserLoginController extends Controller
+class TaskEditController extends Controller
 {
 
   public function postEdit()
