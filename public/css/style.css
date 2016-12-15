@@ -1,0 +1,80 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 1.5em;
+	color: gray;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-image: url('../images/handmadepaper.png');
+	background-repeat: repeat;
+ }
+
+#maincontent {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFF;
+	box-shadow: 2px 2px 7px #888;
+	border-radius: 10px;
+	padding: 30px;
+}
+
+h1 {
+	text-align: center;
+	color: #2c3e45;
+	line-height: 1.5em;
+}
+
+h2, h3 {
+	font-size: 1.5em;
+}
+
+h2 {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	line-height: 1.3em;
+	color: #2c3e45;
+
+}
+h3 {
+	color: mediumblue;
+	padding-top: 10px;
+}
+
+#phoneNumber {
+	margin-bottom: 10px;
+	color: mediumblue;
+}
+
+a:link , a:visited {
+	color: cornflowerblue;
+}
+
+a:hover {
+	color: #545454;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #6495ed;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #5c8adc;
+}
+
+input[type=text], select {
+    width: 5%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
