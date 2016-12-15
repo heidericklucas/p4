@@ -4,9 +4,6 @@
 <div class="jumbotron">
 <div class="container">
 
-
-{{---- EDIT -----}}
-
 {{ Form::open(array('url' => '/handleEdit'))}}
 
 {{ Form::hidden('id',$task['id']); }}
