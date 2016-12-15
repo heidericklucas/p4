@@ -3,8 +3,8 @@
 @section('content')
 
 <!-- Welcome mat -->
-Welcome to HEID TASK.</br>
-Sign up above.  
+Welcome to HEID TASK.<br>
+Sign up above.
 
 
 @stop
