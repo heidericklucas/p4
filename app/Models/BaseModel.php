@@ -1,6 +1,6 @@
 <?php
 
-use Carbon/Carbon
+use Carbon/Carbon;
 
 class BaseModel extends Eloquent {
 
