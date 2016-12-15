@@ -10,6 +10,7 @@ use Validator;
 use Auth;
 use Redirect;
 use Carbon\Carbon;
+use App\Models\Task;
 
 class HandleCreateController extends Controller
 {
