@@ -45,3 +45,4 @@ class UserLoginController extends Controller
         $task->save();
         return Redirect::to('/incomplete');
 }
+}
