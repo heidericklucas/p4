@@ -9,6 +9,7 @@ use Input;
 use Validator;
 use Auth;
 use Redirect;
+use Task;
 
 class TaskEditController extends Controller
 {
@@ -39,4 +40,5 @@ class TaskEditController extends Controller
     };
     $task->save();
     return Redirect::to('/all');
+}
 }
